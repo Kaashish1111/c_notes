@@ -2,7 +2,7 @@
 int main(){
     FILE *fp=NULL;
     char ch;
-    fp=fopen("abc.txt","a+");
+    fp=fopen("xyz.txt","w+");
     if(fp==NULL){
         printf("File not found");
         exit(1);
