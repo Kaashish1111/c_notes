@@ -4,6 +4,7 @@ int main()
     char str[1084];
     FILE *fp = NULL;
     fp = fopen("story.txt", "r");
+    // fp=fopen("auu.txt","r");
     if (fp == NULL)
     {
         printf("File not found");
