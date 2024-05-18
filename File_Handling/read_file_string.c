@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    char str[10];
+    char str[1084];
     FILE *fp = NULL;
     fp = fopen("story.txt", "r");
     if (fp == NULL)
@@ -10,8 +10,9 @@ int main()
     }
     else
     {
-        while (fgets(str, 10, fp) != NULL)
+        while (!feof(fp))
         {
+            fgets(str, 1084, fp);
             printf("%s", str);
         }
     }
