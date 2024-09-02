@@ -14,7 +14,6 @@ int main()
             if (i != j && arr[i] == arr[j])
             {
                 check = true;
-                break;
             }
         }
         if (!check)
